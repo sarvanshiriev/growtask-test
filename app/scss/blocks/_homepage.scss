@@ -10,6 +10,21 @@
         row-gap: 60px;
         column-gap: 34px;
     }
+    @media (min-width: $hd-width) { 
+        min-width: $hd-width;
+        padding: 40px $padding-hd 120px $padding-hd;
+        grid-template-columns: 1fr 628px;
+        grid-template-rows: 302px 128px;
+        column-gap: 20px;
+    }
+    @media (min-width: $fullhd-width) { 
+        min-width: $fullhd-width;
+        grid-template-columns: 1fr 700px;
+        grid-template-rows: 302px 128px;
+        column-gap: 20px;
+        padding: 40px $padding-fullhd 120px $padding-fullhd;
+        row-gap: 80px;
+    }
 }
 .homepage__title {
   font-family: $Gogh;
@@ -20,6 +35,11 @@
   text-align: left;
   color: $Black;
   margin-bottom: 20px;
+  @media (min-width: $hd-width) {     
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 40px;
+  }
 }
 .homepage__title span {
   color: $Dark;
@@ -33,6 +53,16 @@
   text-align: left;
   color: $Dark-gray;
   margin-bottom: 40px;
+  @media (min-width: $hd-width) {     
+    font-size: 20px;
+    line-height: 30px;
+    width: 460px;
+  }
+}
+.homepage__head {
+    @media (min-width: $hd-width) {  
+        margin-top: 80px;
+    }
 }
 .homepage__picture {
     width: 163px;
@@ -41,6 +71,14 @@
     @media (min-width: $tablet-width) {
         width: 172px;
         height: 172px;
+    }
+    @media (min-width: $hd-width) { 
+        width: 304px;
+        height: 304px;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 340px;
+        height: 340px;
     }
 }
 .homepage__wrapper {
@@ -51,13 +89,25 @@
     column-gap: 16px;
     margin: 0 auto 40px auto;
     width: 342px;
-    // @media (min-width: $tablet-width) {
-    //     grid-template-columns: 172px 172px;
-    //     grid-template-rows: 1fr 1fr;
-    //     width: 360px;
-    //     margin: 0;
-    //     display: grid;
-    // }
+    @media (min-width: $tablet-width) {
+        grid-template-columns: 172px 172px;
+        width: 360px;
+        margin: 0;
+    }
+    @media (min-width: $hd-width) {
+        grid-template-columns: 304px 304px;
+        width: 628px;
+        margin: 0;
+        row-gap: 20px;
+        column-gap: 16px;
+    }
+    @media (min-width: $fullhd-width) { 
+        grid-template-columns: 340px 340px;
+        width: 700px;
+        margin: 0;
+        row-gap: 20px;
+        column-gap: 16px;
+    }
 }
 .homepage__picture:nth-child(2) {
     grid-row-start: 1;
@@ -70,6 +120,12 @@
     background-color: $Black;
     border-radius: 8px;
     width: 100%;
+    @media (min-width: $hd-width) {
+        width: 504px;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+    }
 }
 .homepage__block-text {
     font-family: $Gogh;
@@ -80,6 +136,9 @@
     text-align: left;
     color: $White;
     margin-bottom: 20px;
+    @media (min-width: $hd-width) {
+        margin: 0 20px 0 0;
+    }
 }
 .homepage__block-text span{
    color: $Light;
@@ -97,4 +156,8 @@
     letter-spacing: 0em;
     width: 100%;
     display: block;
+    @media (min-width: $hd-width) {
+        width: auto;
+        padding: 13.5px 20px;
+    }
 }
