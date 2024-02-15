@@ -35,11 +35,16 @@
 .header__navigation {
     // border: 1px red solid;
     position: absolute;
-    margin-top: 20px;
+    background-color: $White;
+    width: 100%;
+    left: 0;
+    padding: 20px $padding-mobile 80px $padding-mobile;
     @media (min-width: $hd-width) { 
         position: relative;
         margin-left: auto;
         margin-top: 0px;
+        padding: 0;
+        width: auto;
 }
 }
 .header__navigation--closed {
@@ -179,6 +184,7 @@
     padding-left: 0;
     border-radius: 4px;
     margin: 40px 0;
+    width: 342px;
     @media (min-width: $tablet-width) { 
         width: 100px;
     }
@@ -213,6 +219,10 @@
 .header__navigation-link-button {
     color: $White;
     padding-left:0 ;
+    width: 342px;
+    @media (min-width: $tablet-width) { 
+        width: 100px;
+    }
     @media (min-width: $hd-width) { 
         width: auto;
         padding-left:20px;
