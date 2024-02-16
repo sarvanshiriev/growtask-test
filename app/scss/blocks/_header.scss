@@ -19,7 +19,7 @@
         align-items: center;
     }
     @media (min-width: $fullhd-width) { 
-        min-width: $fullhd-width;
+        width: $fullhd-width;
         padding: 12px $padding-fullhd;
     }
 }

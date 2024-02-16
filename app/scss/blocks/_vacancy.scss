@@ -1,0 +1,193 @@
+.vacancy {
+    background-color: $Lighter;
+    padding-bottom: 80px;
+    @media (min-width: $hd-width) { 
+        display: flex;
+    }
+}
+.vacancy__container {
+    min-width: $mobile-width;
+    padding: 80px $padding-mobile 0 $padding-mobile;
+    @media (min-width: $tablet-width) { 
+        min-width: $tablet-width;
+        padding: 80px $padding-tablet 0 $padding-tablet;
+        display: flex;
+    }
+    @media (min-width: $hd-width) { 
+        min-width: 50%;
+        padding:120px 0 0 $padding-hd;
+        display: block;
+        margin-right: 10px;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 50%;
+        padding: 120px 0 0 $padding-fullhd;
+    }
+}
+.vacancy-title__block {
+    @media (min-width: $tablet-width) { 
+        width: 50%;
+        margin-right: 16px;
+    }
+    @media (min-width: $hd-width) { 
+        width: auto;
+        margin-right: 0;
+    }
+}
+.vacancy__incert {
+    @media (min-width: $tablet-width) { 
+        width: 50%;
+    }
+    @media (min-width: $hd-width) { 
+        width: 100%;
+        
+    }
+}
+.vacancy__title {
+    font-family: $Gogh;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+    @media (min-width: $hd-width) { 
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+}
+.vacancy__subtitle {
+    font-family: $Raleway-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $Dark-gray;
+    margin-bottom: 40px;
+    @media (min-width: $hd-width) { 
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 90px;
+        margin-bottom: 80px;
+    }
+}
+.vacancy__block {
+    background-color: $Black;
+    border-radius: 8px;
+    padding: 20px;
+    @media (min-width: $hd-width) { 
+        padding: 40px;
+        margin-right: 100px;
+    }
+}
+.vacancy__block:not(:last-child) {
+    margin-bottom: 20px;
+}
+.vacancy__block:last-child {
+    margin-bottom: 60px;
+}
+.vacancy__block-text {
+    font-family: $Gogh;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:$Main;
+    margin-bottom: 12px;
+    @media (min-width: $hd-width) { 
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+.vacancy__block-subtext {
+    font-family: $Raleway-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $White
+}
+.vacancy__wrapper {
+    display: flex;
+    overflow: hidden;
+    transition: transform var(--transition-duration, 0.3s) ease-in-out;
+    cursor: pointer;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    margin-left: 16px;
+    @media (min-width: $hd-width) { 
+        display: block;
+        min-width: 50%;
+        padding-top: 120px;
+        margin-left: 0px;
+        padding-right: $padding-hd;
+    }
+}
+.vacancy__wrapper-photo:nth-child(1) {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+    background-image: url('/app/images/src/vacancy/photo-1.png');
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    flex: 0 0 280px;
+    background-size: cover;
+    @media (min-width: $hd-width) { 
+        width: 628px;
+        height: 320px;
+        background-image: url('/app/images/src/vacancy/photohd-1.png');
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 700px;
+        height: 400px;
+    }
+}
+.vacancy__wrapper-photo:nth-child(2) {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+    background-image: url('/app/images/src/vacancy/photo-2.png');
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    flex: 0 0 280px;
+    background-size: cover;
+    @media (min-width: $hd-width) { 
+        width: 628px;
+        height: 320px;
+        background-image: url('/app/images/src/vacancy/photohd-2.png');
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 700px;
+        height: 400px;
+    }
+}
+.vacancy__wrapper-photo:nth-child(3) {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+    background-image: url('/app/images/src/vacancy/photo-3.png');
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    flex: 0 0 280px;
+    background-size: cover;
+    @media (min-width: $hd-width) { 
+        width: 628px;
+        height: 320px;
+        background-image: url('/app/images/src/vacancy/photohd-3.png');
+        margin-right: 0px;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 700px;
+        height: 400px;
+    }
+}

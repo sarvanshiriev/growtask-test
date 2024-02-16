@@ -12,18 +12,19 @@
     }
     @media (min-width: $hd-width) { 
         min-width: $hd-width;
-        padding: 40px $padding-hd 120px $padding-hd;
+        padding: 40px $padding-hd 238px $padding-hd;
         grid-template-columns: 1fr 628px;
         grid-template-rows: 302px 128px;
         column-gap: 20px;
     }
     @media (min-width: $fullhd-width) { 
-        min-width: $fullhd-width;
+        width: $fullhd-width;
         grid-template-columns: 1fr 700px;
         grid-template-rows: 302px 128px;
         column-gap: 20px;
-        padding: 40px $padding-fullhd 120px $padding-fullhd;
+        padding: 40px $padding-fullhd 310px $padding-fullhd;
         row-gap: 80px;
+        margin: 0 auto;
     }
 }
 .homepage__title {
@@ -160,4 +161,12 @@
         width: auto;
         padding: 13.5px 20px;
     }
+}
+.homepage__block-button:hover {
+    background-color: $Light;
+    color: $White;
+}
+.homepage__block-button:focus {
+    background-color: $Dark;
+    color: $White;
 }
