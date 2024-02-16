@@ -1,9 +1,16 @@
 .vacancy {
     background-color: $Lighter;
-    padding-bottom: 80px;
+}
+.vacancy__shell {
     @media (min-width: $hd-width) { 
+        padding-bottom: 80px;
         display: flex;
     }
+    @media (min-width: $fullhd-width) { 
+        width: $fullhd-width;
+        margin: 0 auto;
+    }
+
 }
 .vacancy__container {
     min-width: $mobile-width;
@@ -20,7 +27,7 @@
         margin-right: 10px;
     }
     @media (min-width: $fullhd-width) { 
-        width: 50%;
+        width: 700px;
         padding: 120px 0 0 $padding-fullhd;
     }
 }
@@ -32,6 +39,9 @@
     @media (min-width: $hd-width) { 
         width: auto;
         margin-right: 0;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 700px;
     }
 }
 .vacancy__incert {
@@ -127,6 +137,10 @@
         padding-top: 120px;
         margin-left: 0px;
         padding-right: $padding-hd;
+    }
+    @media (min-width: $fullhd-width) {
+        width: 700px;
+        padding-right: $padding-fullhd;
     }
 }
 .vacancy__wrapper-photo:nth-child(1) {

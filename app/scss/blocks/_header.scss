@@ -6,6 +6,11 @@
     // border: 1px blue solid;
     position: relative;
     box-shadow: 0px 0px 25px 0px rgba(5, 25, 25, 0.08);
+    position: fixed;
+    background-color: $White;
+    top: 0;
+    left: 0;
+    right: 0;
     @media (min-width: $tablet-width) { 
         min-width: $tablet-width;
         // max-width: 1365px;
@@ -22,6 +27,39 @@
         width: $fullhd-width;
         padding: 12px $padding-fullhd;
     }
+}
+.logo-container {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 10px;
+    margin-left: -10px;
+}
+.hidden-text {
+    position: absolute;
+    bottom: -20px;
+    left: 45px; 
+    font-size: 20px;
+    font-family: $Gogh;
+    line-height: 20px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 0em;
+    color: $Main;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+.hidden-text:focus {
+    color: $Dark;
+}
+.header__logo-image {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+.header__logo--closed:hover .header__logo-image {
+    transform: translateY(-30px); /* Поднимаем логотип при наведении на родительский контейнер */
+}
+.header__logo--closed:hover .hidden-text {
+    transform: translateY(-30px); /* Поднимаем логотип при наведении на родительский контейнер */
 }
 .header__container {
     display: flex;
