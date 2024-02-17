@@ -2,8 +2,9 @@
     background-color: $Lighter;
 }
 .vacancy__shell {
+    padding-bottom: 80px;
     @media (min-width: $hd-width) { 
-        padding-bottom: 80px;
+        padding-bottom: 120px;
         display: flex;
     }
     @media (min-width: $fullhd-width) { 

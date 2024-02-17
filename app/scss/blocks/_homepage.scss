@@ -1,9 +1,9 @@
 .homepage__container {
     min-width: $mobile-width;
-    padding: 60px $padding-mobile 80px $padding-mobile;
+    padding: 134px $padding-mobile 80px $padding-mobile;
     @media (min-width: $tablet-width) { 
         min-width: $tablet-width;
-        padding: 60px $padding-tablet 80px $padding-tablet;
+        padding: 134px $padding-tablet 80px $padding-tablet;
         display: grid;
         grid-template-columns: 1fr 360px;
         grid-template-rows: 156px 128px;
@@ -12,7 +12,7 @@
     }
     @media (min-width: $hd-width) { 
         min-width: $hd-width;
-        padding: 40px $padding-hd 238px $padding-hd;
+        padding: 112px $padding-hd 238px $padding-hd;
         grid-template-columns: 1fr 628px;
         grid-template-rows: 302px 128px;
         column-gap: 20px;
@@ -22,7 +22,7 @@
         grid-template-columns: 1fr 700px;
         grid-template-rows: 302px 128px;
         column-gap: 20px;
-        padding: 40px $padding-fullhd 310px $padding-fullhd;
+        padding: 114px $padding-fullhd 310px $padding-fullhd;
         row-gap: 80px;
         margin: 0 auto;
     }
