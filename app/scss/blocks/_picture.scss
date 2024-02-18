@@ -1,0 +1,138 @@
+.picture {
+    background-color: $Lighter;
+    padding: 80px $padding-mobile;
+    @media (min-width: $hd-width) { 
+        padding: 120px $padding-hd;
+    }
+    @media (min-width: $fullhd-width) {
+        padding: 120px $padding-fullhd;
+    }
+}
+.picture__shell {
+    min-width: $mobile-width;
+    @media (min-width: $tablet-width) { 
+        min-width: $tablet-width;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: $fullhd-width;
+        margin: 0 auto;
+    }
+}
+.picture__list {
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) { 
+        margin-bottom: 0;
+    }
+}
+.picture__item {
+    width: 342px;
+    margin: 0 auto;
+    @media (min-width: $hd-width) { 
+        width: 844px; 
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 940px;
+    }
+}
+.picture__item {
+    display: none;
+}
+.active {
+    display: block;
+}
+.picture__image {
+    width: 342px;
+    border-radius: 8px;
+    @media (min-width: $hd-width) { 
+        width: 844px; 
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 940px;
+    }
+}
+.picture__buttons {
+    @media (min-width: $tablet-width) { 
+        width: 100%;
+    }
+}
+.picture__buttons-item {
+    min-width: $mobile-width;
+    height: 72px;
+    background-color: $White;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    @media (min-width: $tablet-width) { 
+        width: 100%;
+    }
+    @media (min-width: $fullhd-width) { 
+        width: 440px;
+    }
+}
+.picture__buttons-item:last-child {
+    margin-bottom: 0px;
+}
+.picture__buttons-link {
+    min-width: $mobile-width;
+    height: 72px;
+    display: block;
+    font-size: 20px;
+    font-family: $Raleway-Regular;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0em;
+    color: $Dark-gray;
+    position: relative;
+    padding: 21px 0 21px 80px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+.picture__buttons-link:hover {
+    border: 2px solid $Light-gray;
+}
+.picture__buttons-link:focus {
+    border: 2px solid $Light;
+}
+.button-active {
+    border: 2px solid $Light;
+}
+.picture__wrapper {
+    @media (min-width: $tablet-width) { 
+        margin-right: 16px;
+    }
+    @media (min-width: $hd-width) { 
+        margin-right: 40px;
+    }
+}
+.picture__buttons-link-1:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    background-image: url(/app/images/src/picture/image-button-1.png);
+    border-radius: 4px;
+}
+.picture__buttons-link-2:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    background-image: url(/app/images/src/picture/image-button-2.png);
+    border-radius: 4px;
+}
+.picture__buttons-link-3:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    background-image: url(/app/images/src/picture/image-button-3.png);
+    border-radius: 4px;
+}
