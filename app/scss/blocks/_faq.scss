@@ -1,8 +1,20 @@
 .faq {
     padding: 40px $padding-mobile 80px $padding-mobile;
+    @media (min-width: $hd-width) { 
+        padding: 120px $padding-hd;
+    }
+    @media (min-width: $hd-width) { 
+        padding: 120px $padding-fullhd;
+    }
 }
 .faq_container {
     min-width: $mobile-width;
+    @media (min-width: $tablet-width) { 
+        min-width: $tablet-width;
+    }
+    @media (min-width: $hd-width) { 
+        min-width: $hd-width;
+    }
 }
 .faq__title {
     font-size: 28px;
@@ -12,6 +24,10 @@
     text-align: left;
     letter-spacing: 0em;
     margin-bottom: 40px;
+    @media (min-width: $hd-width) { 
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
 .faq__item-question {
     font-size: 16px;
@@ -28,11 +44,11 @@
     font-size: 16px;
     font-family: $Raleway-Regular;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
     letter-spacing: 0em;
     margin-top: 25px;
-    // display: none;
+    display: none;
 }
 .faq__item {
     background-color: $Lighter;
@@ -51,6 +67,19 @@
     position: absolute;
     right: 12px;
     top: 12px;
+}
+.faq__item-link::after {
+    background-image: url(/app/images/src/faq/plus.svg);
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: '';
+    transition: transform 0.3s ease;
+}
+.rotate::after {
+    transform: rotate(-45deg);
 }
 .faq__item-link:hover {
     background-color: $Light;

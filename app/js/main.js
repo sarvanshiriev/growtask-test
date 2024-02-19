@@ -4,3 +4,4 @@ import './logo.js';
 import './slider.js';
 import './modal.js';
 import './picture.js';
+import './faq.js';
