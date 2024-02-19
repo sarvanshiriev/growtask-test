@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; // Adjust scrolling speed here
+    const walk = (x - startX) * 3;
     slider.scrollLeft = scrollLeft - walk;
   });
 
@@ -33,15 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const rightButton = document.querySelector('.slider__button-right');
 
   leftButton.addEventListener('click', (e) => {
-    e.preventDefault(); // Предотвращаем стандартное действие ссылки
-    // При клике на кнопку "влево"
+    e.preventDefault();
     const slideWidth = slider.querySelector('.slider__slide').offsetWidth;
     slider.scrollLeft -= slideWidth;
   });
 
   rightButton.addEventListener('click', (e) => {
-    e.preventDefault(); // Предотвращаем стандартное действие ссылки
-    // При клике на кнопку "вправо"
+    e.preventDefault();
     const slideWidth = slider.querySelector('.slider__slide').offsetWidth;
     slider.scrollLeft += slideWidth;
   });
