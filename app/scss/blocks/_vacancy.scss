@@ -82,18 +82,27 @@
         margin-right: 90px;
         margin-bottom: 80px;
     }
+    @media (min-width: $fullhd-width) {
+        margin-right: 120px;
+    }
 }
 .vacancy__block {
     background-color: $Black;
     border-radius: 8px;
     padding: 20px;
     @media (min-width: $hd-width) { 
-        padding: 40px;
-        margin-right: 100px;
+        padding: 41px;
+        margin-right: 120px;
+    }
+    @media (min-width: $fullhd-width) {
+        margin-right: 130px;
     }
 }
 .vacancy__block:not(:last-child) {
     margin-bottom: 20px;
+    @media (min-width: $hd-width) { 
+        margin-bottom: 19px;
+    }
 }
 .vacancy__block:last-child {
     margin-bottom: 60px;
@@ -110,6 +119,7 @@
     @media (min-width: $hd-width) { 
         font-size: 56px;
         line-height: 56px;
+        margin-bottom: 18px;
     }
 }
 .vacancy__block-subtext {

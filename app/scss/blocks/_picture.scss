@@ -1,6 +1,10 @@
 .picture {
     background-color: $Lighter;
-    padding: 80px $padding-mobile;
+    padding: 82px $padding-mobile;
+    min-width: $mobile-width;
+    @media (min-width: $tablet-width) { 
+        padding: 80px $padding-tablet;
+    }
     @media (min-width: $hd-width) { 
         padding: 120px $padding-hd;
     }
@@ -9,9 +13,7 @@
     }
 }
 .picture__shell {
-    min-width: $mobile-width;
     @media (min-width: $tablet-width) { 
-        min-width: $tablet-width;
         display: flex;
         justify-content: space-between;
     }
@@ -47,9 +49,11 @@
     border-radius: 8px;
     @media (min-width: $hd-width) { 
         width: 844px; 
+        height: 440px;
     }
     @media (min-width: $fullhd-width) { 
         width: 940px;
+        height: 480px;
     }
 }
 .picture__buttons {
@@ -58,7 +62,6 @@
     }
 }
 .picture__buttons-item {
-    min-width: $mobile-width;
     height: 72px;
     background-color: $White;
     margin-bottom: 20px;
@@ -74,8 +77,7 @@
     margin-bottom: 0px;
 }
 .picture__buttons-link {
-    min-width: $mobile-width;
-    height: 72px;
+    height: 74px;
     display: block;
     font-size: 20px;
     font-family: $Raleway-Regular;
