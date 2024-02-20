@@ -44,25 +44,25 @@
     }
 }
 .form__container {
-    background-image: url(app/images/src/form/background.png);
+    background-image: url(../images/src/form/background.png);
     background-repeat: no-repeat;
     width: $mobile-width;
     margin: 0 auto;
     padding: 40px $padding-mobile;
     border-radius: 8px;
     @media (min-width: $tablet-width) { 
-        background-image: url(app/images/src/form/background-tablet.png);
+        background-image: url(../images/src/form/background-tablet.png);
         width: $tablet-width;
         padding: 42px $padding-tablet;
     }
     @media (min-width: $hd-width) { 
-        background-image: url(app/images/src/form/background-hd.png);
+        background-image: url(../images/src/form/background-hd.png);
         width: 1276px;
         position: relative;
         padding: 60px;
     }
     @media (min-width: $fullhd-width) { 
-        background-image: url(app/images/src/form/background-fullhd.png);
+        background-image: url(../images/src/form/background-fullhd.png);
         width: 1420px;
         padding: 60px;
     }
@@ -195,7 +195,7 @@
     height: 20px;
     left: -30px;
     top: -2px;
-    background-image: url(app/images/src/form/check.svg);
+    background-image: url(../images/src/form/check.svg);
 }
 .form__checkbox:checked+.form__checkbox-label::before {
     position: absolute;
@@ -204,7 +204,7 @@
     height: 20px;
     left: -30px;
     top: -2px;
-    background-image: url(app/images/src/form/check-focus.svg);
+    background-image: url(../images/src/form/check-focus.svg);
 }
 .form__button {
     padding: 13.5px;
