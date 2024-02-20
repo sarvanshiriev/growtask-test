@@ -1,3 +1,4 @@
+// Логика изменения инпутов формы(текст,бордеры) отправки сообщения
 const formInputs = document.querySelectorAll('.form__item-input');
 
 formInputs.forEach(input => {

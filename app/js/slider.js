@@ -1,3 +1,4 @@
+// Логика работы слайдера
 document.addEventListener('DOMContentLoaded', function() {
   const slider = document.querySelector('.slider__wrapper');
   let isDown = false;

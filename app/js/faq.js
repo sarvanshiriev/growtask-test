@@ -1,3 +1,4 @@
+// Логика открытия-закрытия ответов на вопросы
 const faqItems = document.querySelectorAll('.faq__item');
 
 faqItems.forEach(item => {

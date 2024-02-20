@@ -1,3 +1,4 @@
+// Логика скролла вверх при нажатии на лого
 document.addEventListener('DOMContentLoaded', function() {
     var logo = document.getElementById('logo');
     logo.addEventListener('click', function(event) {

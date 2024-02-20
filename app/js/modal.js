@@ -1,3 +1,4 @@
+// Логика открытия-закрытия модального окна для просмотра масштабированного изображения
 function openModal(imgElement) {
     const modal = document.getElementById('slider__modal');
     const modalImage = document.getElementById('modalImage');

@@ -1,3 +1,4 @@
+// Логика открытия-закрытия бургера
 let burgerList = document.querySelector('.header__navigation');
 let toggle = document.querySelector('.header__toggle');
 let logo = document.querySelector('.header__logo');

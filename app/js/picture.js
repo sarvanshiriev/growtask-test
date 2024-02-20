@@ -1,3 +1,4 @@
+// Логика переключения картинок
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".picture__buttons-link"); 
     const images = document.querySelectorAll(".picture__item"); 

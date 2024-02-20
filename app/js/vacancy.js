@@ -1,3 +1,4 @@
+// Логика скролла фотографий в блоке "Вакансия"
 const slider = document.querySelector(".vacancy__wrapper");
 let isMouseDown = false;
 let startX;
