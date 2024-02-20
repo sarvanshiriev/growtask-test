@@ -63,10 +63,10 @@
     transition: transform 0.3s ease;
 }
 .header__logo--closed:hover .header__logo-image {
-    transform: translateY(-30px); /* Поднимаем логотип при наведении на родительский контейнер */
+    transform: translateY(-30px);
 }
 .header__logo--closed:hover .hidden-text {
-    transform: translateY(-30px); /* Поднимаем логотип при наведении на родительский контейнер */
+    transform: translateY(-30px);
 }
 .header__container {
     display: flex;

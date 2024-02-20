@@ -19,6 +19,6 @@ document.addEventListener('mousemove', (e) => {
   if (!isMouseDown) return;
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2; // Множитель для более быстрой прокрутки
+  const walk = (x - startX) * 2;
   slider.scrollLeft = scrollLeft - walk;
 });
